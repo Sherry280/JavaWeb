@@ -3,11 +3,30 @@ package Niuke;
 import java.util.*;
 
 public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double[] array=new double[5];
+        double sum=0.0;
+        for(int i=0;i<5;i++){
+            for(int j=0;j<5;j++){
+                array[j]=sc.nextDouble();
+                sum+=array[j];
+            }
+            for(int m=0;m<5;m++){
+                System.out.println(array[i]+" ");
+            }
+            System.out.print(sum);
+        }
+
+    }
+
+
+
     //输入两个升序排列的序列，将两个序列合并为一个有序序列并输出。
     //5 6
     //1 3 7 9 22
     //2 8 10 17 33 44
-    public static void main(String[] args) {
+    public static void main4(String[] args) {
         List<Integer> list=new ArrayList<>();
         Scanner sc=new Scanner(System.in);
         int n1=sc.nextInt();
