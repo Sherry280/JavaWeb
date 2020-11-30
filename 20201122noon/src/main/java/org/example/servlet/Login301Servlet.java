@@ -35,6 +35,7 @@ public class Login301Servlet extends HttpServlet {
             resp.sendRedirect("home.html");//重定向，
 
         }else if("abc".equals(u)){
+            //转发
             req.getRequestDispatcher("home.html").forward(req,resp);
 
         }else{
