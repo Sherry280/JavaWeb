@@ -42,9 +42,10 @@ insert into article(title, content,user_id) values ('堆排序','public ***',1);
 -- 比如从表有一行数据关联到主表，那么这一行数据就不能删除
 --真实的设计上是使用不删除物理数据，在每一张表上设计一个字段，表示是否有效
 
---
+select username,password,nickname,sex,birthday,head from user where username=?
 
 
+select id,title from article user_id=?
 
 
 

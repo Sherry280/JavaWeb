@@ -2,7 +2,6 @@ package org.example.util;
 
 import org.junit.Assert;
 import org.junit.Test;
-import xixi.org.example.util.DBUtil;
 
 import java.sql.Connection;
 
