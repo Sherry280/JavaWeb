@@ -7,15 +7,17 @@ public class Thread2 {
             Thread t=new Thread(){
                 @Override
                 public void run() {
-                    //执行9999次
-                    for(int i=0;i<10000;i++){
-                        if(i==9999)
-                            System.out.println(i);
-
+                    try {
+                        Thread.sleep(9999);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
                 }
             };
             t.start();
+            while(true){
+
+            }
         }
     }
 }
